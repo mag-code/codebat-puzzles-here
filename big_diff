@@ -1,0 +1,15 @@
+#Given an array length 1 or more of ints, return the difference between the largest and smallest values in the array. 
+#Note: the built-in min(v1, v2) and max(v1, v2) functions return the smaller or larger of two values.
+
+def big_diff(nums):
+  return max(nums) - min(nums)
+#without built-in function
+
+def big_diff(nums):
+  minv,maxv=nums[0],nums[0]
+  for i in range(0,len(nums),1):
+    if nums[i]>maxv:
+      maxv= nums[i]
+    if nums[i]<minv:
+      minv= nums[i]
+  return (maxv-minv)
