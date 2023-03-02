@@ -3,8 +3,8 @@
 
 def big_diff(nums):
   return max(nums) - min(nums)
-#without built-in function
 
+#without built-in function
 def big_diff(nums):
   minv,maxv=nums[0],nums[0]
   for i in range(0,len(nums),1):
